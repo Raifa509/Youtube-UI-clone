@@ -57,7 +57,7 @@
                 </div>
                 <div class="relative group inline-block">
                     <div
-                        class="bg-zinc-800 rounded-full w-[40px] h-[40px] flex justify-center items-center ms-3 hover:bg-neutral-700 transition transition">
+                        class="bg-zinc-800 rounded-full w-[40px] h-[40px] flex justify-center items-center ms-3 hover:bg-neutral-700 transition">
                         <i class="fa-solid fa-microphone bg-transparent" style="color:  #ffffff;"></i>
                         <div class="w-[140px] text-center absolute top-full left-1/2 -translate-x-1/2 mt-3 
                       hidden group-hover:block 
@@ -92,44 +92,140 @@
     </nav>
     <!-- side bar -->
     <aside>
-        <div class="w-[220px] border mt-3">
+        <div class="w-[240px] mt-3 overflow-y-auto scroll-smooth sidebar-scroll">
             <ul>
-                <li class="text-neutral-200 text-sm py-2 font-semibold px-3 mx-3 bg-neutral-800 rounded-lg"><i
+                <li title="Home"
+                    class="text-neutral-200 text-sm py-2 font-semibold px-3 mx-3 bg-neutral-800 rounded-lg"><i
                         class="fa-solid fa-house fa-lg me-4" style="color: #ffffff;"></i>Home</li>
-                <li class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex ">
-                    <span><img src="./media/youtube-shorts.png" alt="" width="20px" class="me-4"></span>Shorts</li>
-                <li
-                    class="text-neutral-200 text-sm py-2 px-3 mx-3 mb-2 hover:bg-neutral-800 rounded-lg flex items-center gap-4">
-                    <img src="media/subscriptions.svg" alt="Subscriptions Icon" class="w-5 h-5" />
-                    Subscriptions
+
+                <li title="Shorts"
+                    class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex transition ">
+                    <span><img src="./media/youtube-shorts.png" alt="" width="20px" class="me-4"></span>Shorts
                 </li>
+                <li title="Subscriptions"
+                    class="text-neutral-200 text-sm py-2 px-3 mx-3 mb-2 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                    <img src="media/subscriptions.svg" alt="Subscriptions Icon" class="w-5 h-5" />
+                    Subscriptions<span class="inline-block w-[4px] h-[4px] bg-blue-500 rounded-full ms-[0.5rem]"></span>
+                </li>
+                <!-- divider -->
                 <hr class="h-px bg-neutral-200 border-0 mx-3" />
 
-                   <li class="text-neutral-200 text-sm py-2 px-3 mx-3 mt-2 hover:bg-neutral-800 rounded-lg flex items-center">You <img src="./media/keyboard_arrow_right.svg" alt="" class="w-5 h-5"></li>
-              <li
-                    class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4">
+                <li title="You"
+                    class="text-neutral-200 text-sm py-2 px-3 mx-3 mt-2 hover:bg-neutral-800 rounded-lg flex items-center font-semibold transition">
+                    You <img src="./media/keyboard_arrow_right.svg" alt="" class="w-5 h-5"></li>
+                <li title="History"
+                    class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
                     <img src="media/history.svg" alt="Subscriptions Icon" class="w-5 h-5" />
                     History
                 </li>
-                <li
-                    class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4">
+                <li title="Playlists"
+                    class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
                     <img src="media/playlist.svg" alt="Subscriptions Icon" class="w-5 h-5" />
                     Playlists
                 </li>
-                <li
-                    class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4">
+                <li title="Your videos"
+                    class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
                     <img src="media/your_video.svg" alt="Subscriptions Icon" class="w-5 h-5" />
                     Your videos
                 </li>
-                <li
-                    class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4">
+                <li title="Your podcasts"
+                    class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
                     <img src="media/podcast.svg" alt="Subscriptions Icon" class="w-5 h-5" />
                     Your podcasts
                 </li>
-                <li
-                    class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4">
-                    <i class="fa-regular fa-clock" style="color: #ffffff;"></i>
-                    Your podcasts
+                <li title="Watch Later"
+                    class="text-neutral-200 text-sm  py-2 px-[18px] mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-[25px] transition">
+                    <i class="fa-regular fa-clock fa-lg" style="color: #e5e3e3;"></i>
+                    Watch Later
+                </li>
+                <li title="Liked videos"
+                    class="text-neutral-200 text-sm  py-2 px-3 mb-2 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                    <img src="media/thumb_up.svg" alt="Subscriptions Icon" class="w-5 h-5" />
+                    Liked videos
+                </li>
+                <!-- divider -->
+                <hr class="h-px bg-neutral-200 border-0 mx-3" />
+                <li title="Subscriptions"
+                    class="text-neutral-200 text-sm py-2 px-3 mx-3 mt-2 hover:bg-neutral-800 rounded-lg flex items-center font-semibold transition">
+                    Subscriptions</li>
+                <li title="Netflix"
+                    class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                    <img src="media/netflix.png" alt="Subscriptions Icon" class="w-6 h-6" />
+                    Netflix<span class="inline-block w-[5px] h-[5px] bg-blue-500 rounded-full ms-[4.8rem]"></span>
+                </li>
+                <li title="Think Music India"
+                    class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                    <img src="media/thinkmusic.png" alt="Subscriptions Icon" class="w-5 h-5" />
+                    Think Music India<span
+                        class="inline-block w-[4px] h-[4px] ml-[-15px] bg-blue-500 rounded-full"></span>
+                </li>
+                <li title="T-Series Malayalam"
+                    class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                    <div class="w-5 h-5">
+                        <img src="https://yt3.googleusercontent.com/ytc/AIdro_ljQVR7JXdxtbTG1aI-xj4Cb65UB8Mg1akM2Jmn54QR5eQ=s160-c-k-c0x00ffffff-no-rj"
+                            alt="Subscriptions Icon" class="w-5 h-5 rounded-full object-cover" />
+                    </div>
+                    T-Series Malaya...<span
+                        class="inline-block w-[4px] h-[4px] ml-[-15px] bg-blue-500 rounded-full"></span>
+
+                </li>
+                <li title="Kpm Ajmal"
+                    class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                    <div class="w-5 h-5">
+                        <img src="https://yt3.googleusercontent.com/tIf6eir8RsI_7O7lCr3oqgeIeq81S0eqO7IOvIt62iNPIuvxLKsyVt3wNl5B0gYPTKrhZUEIUQ=s160-c-k-c0x00ffffff-no-rj"
+                            alt="Subscriptions Icon" class="w-5 h-5 rounded-full object-cover" />
+                    </div>
+                    Kpm Ajmal
+                </li>
+                <li title="FOREX GAMING 1K"
+                    class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                    <div class="w-5 h-5">
+                        <img src="https://yt3.googleusercontent.com/Nc_ZqXqewVtaq3v0LsInFfC5OSOXWLuEZMXf41NM18q2ob0apjTFj0WfhGU95OhGsrnbSJdrAJU=s160-c-k-c0x00ffffff-no-rj"
+                            alt="Subscriptions Icon" class="w-5 h-5 rounded-full object-cover" />
+                    </div>
+                    FOREX GAMING 1K
+                </li>
+                <li title="All subscriptions"
+                    class="text-neutral-200 text-sm  py-2 px-[18px] mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-[25px] transition">
+                    <i class="fa-solid fa-list-ul fa-lg" style="color: #e5e3e3;"></i>
+                    All subscriptions
+                </li>
+                <li title="Show fewer"
+                    class="text-neutral-200 text-sm  py-2 px-[18px] mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-[25px] transition">
+                    <i class="fa-solid fa-angle-up fa-lg" style="color: #e5e3e3;"></i>
+                    Show fewer
+                </li>
+            </ul>
+            <ul>
+                <hr class="h-px bg-neutral-200 border-0 mx-3" />
+
+                <li title="Explore"
+                    class="text-neutral-200 text-sm py-2 px-3 mx-3 mt-2 hover:bg-neutral-800 rounded-lg flex items-center font-semibold transition">
+                    Explore</li>
+                <li title="Trending"
+                    class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                    <img src="media/trending.svg" alt="Subscriptions Icon" class="w-5 h-5" />
+                    Trending
+                </li>
+                <li title="Music"
+                    class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-[1.9rem] transition">
+                   <i class="fa-solid fa-music" style="color: #e5e3e3;"></i>
+                    Music
+                </li>
+                <li title="Gaming"
+                    class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                    <img src="media/game.svg" alt="Subscriptions Icon" class="w-5 h-5" />
+                    Gaming
+                </li>
+                <li title="Sports"
+                    class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                    <img src="media/trophy.svg" alt="Subscriptions Icon" class="w-5 h-5" />
+                    Sports
+                </li>
+                <li title="Podcast"
+                    class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                    <img src="media/podcast.svg" alt="Subscriptions Icon" class="w-5 h-5" />
+                    Podcasts
                 </li>
             </ul>
         </div>

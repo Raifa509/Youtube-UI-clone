@@ -25,68 +25,115 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-            <!-- css style sheets -->
+    <!-- css style sheets -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <!-- navbar -->
-    <nav class="w-full px-4 py-2 flex justify-between items-center">
+    <nav>
         <!-- logo section -->
-        <div class="flex items-center space-x-6">
-            <div><i class="fa-solid fa-bars fa-lg cursor-pointer" style="color: #d3cece;"></i></div>
-            <div class="flex items-center justify-center space-x-1 cursor-pointer">
-                <img src="./media/youtube.png" alt="youtube icon" width="25" class="block">
-                <h4 class="text-white tracking-tighter text-xl">
-                    YouTube <sup class="text-xs text-neutral-200 font-light">AE</sup>
-                </h4>
-            </div>
-        </div>
-        <!-- search section -->
-        <div class="flex">
-            <div class="flex justify-center items-center group">
-                <div class="w-[500px] border px-3 py-[7px] rounded-l-3xl !border-neutral-700 group-focus-within:border-blue-500 transition">
-                    <input type="text" placeholder="Search" class="w-full bg-transparent text-white outline-none ">
-                </div>
-                <div
-                    class="w-[60px] border px-3 py-[11px] rounded-r-3xl bg-zinc-800 !border-neutral-700 flex items-center justify-center ">
-                    <i class="fa-solid fa-magnifying-glass bg-transparent" style="color: #ffffff;"></i>
+        <div class="w-full ps-[27px] pe-4 py-2 flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <div><i class="fa-solid fa-bars fa-lg cursor-pointer" style="color: #d3cece;"></i></div>
+                <div class="flex items-center justify-center space-x-1 cursor-pointer">
+                    <img src="./media/youtube.png" alt="youtube icon" width="25" class="block">
+                    <h4 class="text-white tracking-tighter text-xl">
+                        YouTube <sup class="text-xs text-neutral-200 font-light">AE</sup>
+                    </h4>
                 </div>
             </div>
-            <div class="relative group inline-block">
-                <div
-                    class="bg-zinc-800 rounded-full w-[40px] h-[40px] flex justify-center items-center ms-3 hover:bg-neutral-700 transition transition">
-                    <i class="fa-solid fa-microphone bg-transparent" style="color:  #ffffff;"></i>
-                    <div class="w-[140px] text-center absolute top-full left-1/2 -translate-x-1/2 mt-3 
-                  hidden group-hover:block 
-                  bg-neutral-700 text-white text-xs px-2 py-2 
-                  rounded ">Search with your voice</div>
+            <!-- search section -->
+            <div class="flex">
+                <div class="flex justify-center items-center group">
+                    <div
+                        class="w-[500px] border px-3 py-[7px] rounded-l-3xl !border-neutral-700 group-focus-within:border-blue-500 transition">
+                        <input type="text" placeholder="Search" class="w-full bg-transparent text-white outline-none ">
+                    </div>
+                    <div
+                        class="w-[60px] border px-3 py-[11px] rounded-r-3xl bg-zinc-800 !border-neutral-700 flex items-center justify-center ">
+                        <i class="fa-solid fa-magnifying-glass bg-transparent" style="color: #ffffff;"></i>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <!-- profile section -->
-        <div class="flex justify-center items-center bg-transparent">
-            <div
-                class="w-[100px] bg-zinc-800 flex justify-center items-center py-2 rounded-3xl me-3 hover:bg-neutral-700 cursor-pointer transition">
-                <i class="fa-solid fa-plus fa-lg" style="color: #dcdada;"></i>
-                <h4 class="text-white text-sm ms-2 font-semibold bg-transparent">Create</h4>
-            </div>
-            <div class="flex justify-center items-center ">
-                <div class="relative group inline-block ">
-                    <i class="fa-regular fa-bell fa-lg cursor-pointer " style="color: #ffffff;"></i>
-                    <div class="absolute top-full left-1/2 -translate-x-1/2 mt-4 
-              hidden group-hover:block 
-              bg-neutral-700 text-white text-xs px-2 py-2 
-              rounded ">Notifications
+                <div class="relative group inline-block">
+                    <div
+                        class="bg-zinc-800 rounded-full w-[40px] h-[40px] flex justify-center items-center ms-3 hover:bg-neutral-700 transition transition">
+                        <i class="fa-solid fa-microphone bg-transparent" style="color:  #ffffff;"></i>
+                        <div class="w-[140px] text-center absolute top-full left-1/2 -translate-x-1/2 mt-3 
+                      hidden group-hover:block 
+                      bg-neutral-700 text-white text-xs px-2 py-2 
+                      rounded ">Search with your voice</div>
                     </div>
                 </div>
             </div>
-            <div
-                class="bg-indigo-500 text-white rounded-full w-[30px] h-[30px] flex justify-center items-center ms-3 cursor-pointer">
-                R
+            <!-- profile section -->
+            <div class="flex justify-center items-center bg-transparent">
+                <div
+                    class="w-[100px] bg-zinc-800 flex justify-center items-center py-2 rounded-3xl me-3 hover:bg-neutral-700 cursor-pointer transition">
+                    <i class="fa-solid fa-plus fa-lg" style="color: #dcdada;"></i>
+                    <h4 class="text-white text-sm ms-2 font-semibold bg-transparent">Create</h4>
+                </div>
+                <div class="flex justify-center items-center ">
+                    <div class="relative group inline-block ">
+                        <i class="fa-regular fa-bell fa-lg cursor-pointer " style="color: #ffffff;"></i>
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 mt-4 
+                  hidden group-hover:block 
+                  bg-neutral-700 text-white text-xs px-2 py-2 
+                  rounded ">Notifications
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-indigo-500 text-white rounded-full w-[30px] h-[30px] flex justify-center items-center ms-3 cursor-pointer">
+                    R
+                </div>
             </div>
         </div>
     </nav>
+    <!-- side bar -->
+    <aside>
+        <div class="w-[220px] border mt-3">
+            <ul>
+                <li class="text-neutral-200 text-sm py-2 font-semibold px-3 mx-3 bg-neutral-800 rounded-lg"><i
+                        class="fa-solid fa-house fa-lg me-4" style="color: #ffffff;"></i>Home</li>
+                <li class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex ">
+                    <span><img src="./media/youtube-shorts.png" alt="" width="20px" class="me-4"></span>Shorts</li>
+                <li
+                    class="text-neutral-200 text-sm py-2 px-3 mx-3 mb-2 hover:bg-neutral-800 rounded-lg flex items-center gap-4">
+                    <img src="media/subscriptions.svg" alt="Subscriptions Icon" class="w-5 h-5" />
+                    Subscriptions
+                </li>
+                <hr class="h-px bg-neutral-200 border-0 mx-3" />
+
+                   <li class="text-neutral-200 text-sm py-2 px-3 mx-3 mt-2 hover:bg-neutral-800 rounded-lg flex items-center">You <img src="./media/keyboard_arrow_right.svg" alt="" class="w-5 h-5"></li>
+              <li
+                    class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4">
+                    <img src="media/history.svg" alt="Subscriptions Icon" class="w-5 h-5" />
+                    History
+                </li>
+                <li
+                    class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4">
+                    <img src="media/playlist.svg" alt="Subscriptions Icon" class="w-5 h-5" />
+                    Playlists
+                </li>
+                <li
+                    class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4">
+                    <img src="media/your_video.svg" alt="Subscriptions Icon" class="w-5 h-5" />
+                    Your videos
+                </li>
+                <li
+                    class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4">
+                    <img src="media/podcast.svg" alt="Subscriptions Icon" class="w-5 h-5" />
+                    Your podcasts
+                </li>
+                <li
+                    class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4">
+                    <i class="fa-regular fa-clock" style="color: #ffffff;"></i>
+                    Your podcasts
+                </li>
+            </ul>
+        </div>
+    </aside>
 </body>
 
 </html>

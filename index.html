@@ -57,7 +57,7 @@
                 </div>
                 <div class="relative group inline-block">
                     <div
-                        class="bg-zinc-800 rounded-full w-[40px] h-[40px] flex justify-center items-center ms-3 hover:bg-neutral-700 transition">
+                        class="bg-zinc-800 rounded-full w-[40px] h-[40px] flex justify-center items-center ms-3 hover:bg-neutral-700 transition cursor-pointer">
                         <i class="fa-solid fa-microphone bg-transparent" style="color:  #ffffff;"></i>
                         <div class="w-[140px] text-center absolute top-full left-1/2 -translate-x-1/2 mt-3 
                       hidden group-hover:block 
@@ -79,7 +79,7 @@
                         <div class="absolute top-full left-1/2 -translate-x-1/2 mt-4 
                   hidden group-hover:block 
                   bg-neutral-700 text-white text-xs px-2 py-2 
-                  rounded ">Notifications
+                  rounded z-10">Notifications
                         </div>
                     </div>
                 </div>
@@ -91,20 +91,20 @@
         </div>
     </nav>
     <!-- side bar -->
-<div class="flex">
+  <div class="flex">
         <aside>
             <div class="w-[240px] mt-3 overflow-y-auto scroll-smooth sidebar-scroll">
                 <ul>
                     <li title="Home"
-                        class="text-neutral-200 text-sm py-2 font-semibold px-3 mx-3 bg-neutral-800 rounded-lg"><i
+                        class="text-neutral-200 text-sm py-2 font-semibold px-3 mx-3 bg-neutral-800 rounded-lg cursor-pointer"><i
                             class="fa-solid fa-house fa-lg me-4" style="color: #ffffff;"></i>Home</li>
     
                     <li title="Shorts"
-                        class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex transition ">
+                        class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex transition cursor-pointer">
                         <span><img src="./media/youtube-shorts.png" alt="" width="20px" class="me-4"></span>Shorts
                     </li>
                     <li title="Subscriptions"
-                        class="text-neutral-200 text-sm py-2 px-3 mx-3 mb-2 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                        class="text-neutral-200 text-sm py-2 px-3 mx-3 mb-2 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition cursor-pointer">
                         <img src="media/subscriptions.svg" alt="Subscriptions Icon" class="w-5 h-5" />
                         Subscriptions<span class="inline-block w-[4px] h-[4px] bg-blue-500 rounded-full ms-[0.5rem]"></span>
                     </li>
@@ -112,35 +112,35 @@
                     <hr class="h-px bg-neutral-200 border-0 mx-3" />
     
                     <li title="You"
-                        class="text-neutral-200 text-sm py-2 px-3 mx-3 mt-2 hover:bg-neutral-800 rounded-lg flex items-center font-semibold transition">
+                        class="text-neutral-200 text-sm py-2 px-3 mx-3 mt-2 hover:bg-neutral-800 rounded-lg flex items-center font-semibold transition cursor-pointer">
                         You <img src="./media/keyboard_arrow_right.svg" alt="" class="w-5 h-5"></li>
                     <li title="History"
-                        class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                        class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition cursor-pointer">
                         <img src="media/history.svg" alt="Subscriptions Icon" class="w-5 h-5" />
                         History
                     </li>
                     <li title="Playlists"
-                        class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                        class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition cursor-pointer">
                         <img src="media/playlist.svg" alt="Subscriptions Icon" class="w-5 h-5" />
                         Playlists
                     </li>
                     <li title="Your videos"
-                        class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                        class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition cursor-pointer">
                         <img src="media/your_video.svg" alt="Subscriptions Icon" class="w-5 h-5" />
                         Your videos
                     </li>
                     <li title="Your podcasts"
-                        class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                        class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition cursor-pointer">
                         <img src="media/podcast.svg" alt="Subscriptions Icon" class="w-5 h-5" />
                         Your podcasts
                     </li>
                     <li title="Watch Later"
-                        class="text-neutral-200 text-sm  py-2 px-[18px] mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-[25px] transition">
+                        class="text-neutral-200 text-sm  py-2 px-[18px] mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-[25px] transition cursor-pointer">
                         <i class="fa-regular fa-clock fa-lg" style="color: #e5e3e3;"></i>
                         Watch Later
                     </li>
                     <li title="Liked videos"
-                        class="text-neutral-200 text-sm  py-2 px-3 mb-2 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                        class="text-neutral-200 text-sm  py-2 px-3 mb-2 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition cursor-pointer">
                         <img src="media/thumb_up.svg" alt="Subscriptions Icon" class="w-5 h-5" />
                         Liked videos
                     </li>
@@ -150,18 +150,18 @@
                         class="text-neutral-200 text-sm py-2 px-3 mx-3 mt-2 hover:bg-neutral-800 rounded-lg flex items-center font-semibold transition">
                         Subscriptions</li>
                     <li title="Netflix"
-                        class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                        class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition cursor-pointer">
                         <img src="media/netflix.png" alt="Subscriptions Icon" class="w-6 h-6" />
                         Netflix<span class="inline-block w-[5px] h-[5px] bg-blue-500 rounded-full ms-[4.8rem]"></span>
                     </li>
                     <li title="Think Music India"
-                        class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                        class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition cursor-pointer">
                         <img src="media/thinkmusic.png" alt="Subscriptions Icon" class="w-5 h-5" />
                         Think Music India<span
                             class="inline-block w-[4px] h-[4px] ml-[-15px] bg-blue-500 rounded-full"></span>
                     </li>
                     <li title="T-Series Malayalam"
-                        class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                        class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition cursor-pointer">
                         <div class="w-5 h-5">
                             <img src="https://yt3.googleusercontent.com/ytc/AIdro_ljQVR7JXdxtbTG1aI-xj4Cb65UB8Mg1akM2Jmn54QR5eQ=s160-c-k-c0x00ffffff-no-rj"
                                 alt="Subscriptions Icon" class="w-5 h-5 rounded-full object-cover" />
@@ -171,7 +171,7 @@
     
                     </li>
                     <li title="Kpm Ajmal"
-                        class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                        class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition cursor-pointer">
                         <div class="w-5 h-5">
                             <img src="https://yt3.googleusercontent.com/tIf6eir8RsI_7O7lCr3oqgeIeq81S0eqO7IOvIt62iNPIuvxLKsyVt3wNl5B0gYPTKrhZUEIUQ=s160-c-k-c0x00ffffff-no-rj"
                                 alt="Subscriptions Icon" class="w-5 h-5 rounded-full object-cover" />
@@ -179,22 +179,17 @@
                         Kpm Ajmal
                     </li>
                     <li title="FOREX GAMING 1K"
-                        class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                        class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition cursor-pointer">
                         <div class="w-5 h-5">
                             <img src="https://yt3.googleusercontent.com/Nc_ZqXqewVtaq3v0LsInFfC5OSOXWLuEZMXf41NM18q2ob0apjTFj0WfhGU95OhGsrnbSJdrAJU=s160-c-k-c0x00ffffff-no-rj"
                                 alt="Subscriptions Icon" class="w-5 h-5 rounded-full object-cover" />
                         </div>
                         FOREX GAMING 1K
                     </li>
-                    <li title="All subscriptions"
-                        class="text-neutral-200 text-sm  py-2 px-[18px] mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-[25px] transition">
-                        <i class="fa-solid fa-list-ul fa-lg" style="color: #e5e3e3;"></i>
-                        All subscriptions
-                    </li>
                     <li title="Show fewer"
-                        class="text-neutral-200 text-sm pt-2 pb-3 px-[18px] mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-[25px] transition">
-                        <i class="fa-solid fa-angle-up fa-lg" style="color: #e5e3e3;"></i>
-                        Show fewer
+                        class="text-neutral-200 text-sm pt-2 pb-3 px-[18px] mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-[25px] transition cursor-pointer">
+                        <i class="fa-solid fa-angle-down fa-lg" style="color: #e5e3e3;"></i>
+                        Show more
                     </li>
                 </ul>
                 <ul>
@@ -204,27 +199,27 @@
                         class="text-neutral-200 text-sm py-2 px-3 mx-3 mt-2 hover:bg-neutral-800 rounded-lg flex items-center font-semibold transition">
                         Explore</li>
                     <li title="Trending"
-                        class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                        class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition cursor-pointer">
                         <img src="media/trending.svg" alt="Subscriptions Icon" class="w-5 h-5" />
                         Trending
                     </li>
                     <li title="Music"
-                        class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-[1.9rem] transition">
+                        class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-[1.9rem] transition cursor-pointer">
                         <i class="fa-solid fa-music" style="color: #e5e3e3;"></i>
                         Music
                     </li>
                     <li title="Gaming"
-                        class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                        class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition cursor-pointer">
                         <img src="media/game.svg" alt="Subscriptions Icon" class="w-5 h-5" />
                         Gaming
                     </li>
                     <li title="Sports"
-                        class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                        class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition cursor-pointer">
                         <img src="media/trophy.svg" alt="Subscriptions Icon" class="w-5 h-5" />
                         Sports
                     </li>
                     <li title="Podcast"
-                        class="text-neutral-200 text-sm  pt-2 pb-3 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                        class="text-neutral-200 text-sm  pt-2 pb-3 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition cursor-pointer">
                         <img src="media/podcast.svg" alt="Subscriptions Icon" class="w-5 h-5" />
                         Podcasts
                     </li>
@@ -236,22 +231,22 @@
                         class="text-neutral-200 text-sm py-2 px-3 mx-3 mt-2 hover:bg-neutral-800 rounded-lg flex items-center font-semibold transition">
                         More from YouTube</li>
                     <li title="Youtube Premium"
-                        class="text-neutral-200 text-sm  py-2 px-3 mx-[19px] hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                        class="text-neutral-200 text-sm  py-2 px-3 mx-[19px] hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition cursor-pointer">
                         <img src="media/youtube.png" alt="Subscriptions Icon" class="w-4 h-4" />
                         Youtube Premium
                     </li>
                     <li title="Youtube Studio"
-                        class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                        class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition cursor-pointer">
                         <img src="./media/ytubestudio.png" alt="" class="w-5 h-5">
                         Youtube Studio
                     </li>
                     <li title="Youtube Music"
-                        class="text-neutral-200 text-sm  py-2 px-3 mx-[17.8px] hover:bg-neutral-800 rounded-lg flex items-center gap-[1.6rem] transition">
+                        class="text-neutral-200 text-sm  py-2 px-3 mx-[17.8px] hover:bg-neutral-800 rounded-lg flex items-center gap-[1.6rem] transition cursor-pointer">
                         <img src="media/youtbemusic.png" alt="Subscriptions Icon" class="w-4 h-4" />
                         Youtube Music
                     </li>
                     <li title="Youtube Kids"
-                        class="text-neutral-200 text-sm  pt-2 pb-3 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                        class="text-neutral-200 text-sm  pt-2 pb-3 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition cursor-pointer">
                         <img src="media/kids.png" alt="Subscriptions Icon" class="w-5 h-5" />
                         Youtube Kids
                     </li>
@@ -259,22 +254,22 @@
                 <ul>
                     <hr class="h-px bg-neutral-200 border-0 mx-3" />
                     <li title="Settings"
-                        class="text-neutral-200 text-sm   pb-2 pt-3 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                        class="text-neutral-200 text-sm   pb-2 pt-3 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition cursor-pointer">
                         <img src="media/settings.svg" alt="Subscriptions Icon" class="w-5 h-5" />
                         Settings
                     </li>
                     <li title="Report history"
-                        class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                        class="text-neutral-200 text-sm py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition cursor-pointer">
                         <img src="./media/flag.svg" alt="" class="w-5 h-5">
                         Report history
                     </li>
                     <li title="Help"
-                        class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                        class="text-neutral-200 text-sm  py-2 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition cursor-pointer">
                         <img src="media/help.svg" alt="Subscriptions Icon" class="w-5 h-5" />
                         Help
                     </li>
                     <li title="Send feedback"
-                        class="text-neutral-200 text-sm  pt-2 pb-3 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition">
+                        class="text-neutral-200 text-sm  pt-2 pb-3 px-3 mx-3 hover:bg-neutral-800 rounded-lg flex items-center gap-4 transition cursor-pointer">
                         <img src="media/feedback.svg" alt="Subscriptions Icon" class="w-5 h-5" />
                         Send feedback
                     </li>
@@ -308,21 +303,21 @@
         </aside>
         <section>
             <div class="h-[2.8rem] mt-3 flex flex-rows mx-4">
-                <div class="h-7 w-9 text-sm bg-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] ">All</div>
-                <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] ">Gaming</div>
-                <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] ">Music</div>
-                <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] ">Podcasts</div>
-                <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] ">Flutters</div>
-                <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] ">Comedy</div>
-                <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] ">Dramedy</div>
-                <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] ">TED</div>
-                 <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] ">Dramedy</div>
-                <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] ">Thrillers</div>
-                <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] ">AI</div>
-                <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] ">Lives</div>
-                <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] ">Programming </div>
-                <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium relative">Recently U 
-                <div class="w-8 h-8 rounded-full bg-neutral-900 flex justify-center items-center hover:bg-neutral-700 transition absolute right-[-11px]"><img src="./media/keyboard_arrow_right.svg" alt="" class="w-6 h-6"></div>
+                <div class="h-7 w-9 text-sm bg-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">All</div>
+                <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">Gaming</div>
+                <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">Music</div>
+                <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">Podcasts</div>
+                <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">Flutters</div>
+                <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">Comedy</div>
+                <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">Dramedy</div>
+                <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">TED</div>
+                 <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">Dramedy</div>
+                <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">Thrillers</div>
+                <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">AI</div>
+                <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">Lives</div>
+                <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">Programming </div>
+                <div class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium relative cursor-pointer">Recently 
+                <div class="w-8 h-8 rounded-full bg-neutral-900 flex justify-center items-center hover:bg-neutral-700 transition absolute right-[-11px] cursor-pointer"><img src="./media/keyboard_arrow_right.svg" alt="" class="w-6 h-6"></div>
                  </div>
             </div>
 </div>

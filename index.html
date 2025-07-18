@@ -29,11 +29,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="h-screen">
     <!-- navbar -->
-    <nav>
+    <nav class="sticky top-0 z-50 bg-black h-14 flex items-center px-4">
         <!-- logo section -->
-        <div class="w-full ps-[27px] pe-4 py-2 flex justify-between items-center">
+        <div class="w-full h-[56px] ps-[27px] pe-4 py-2 flex justify-between items-center">
             <div class="flex items-center space-x-6">
                 <div><i class="fa-solid fa-bars fa-lg cursor-pointer" style="color: #d3cece;"></i></div>
                 <div class="flex items-center justify-center space-x-1 cursor-pointer">
@@ -91,9 +91,9 @@
         </div>
     </nav>
     <!-- side bar -->
-    <div class="flex">
+    <div class="flex ">
         <aside>
-            <div class="w-[240px] mt-3 overflow-y-auto scroll-smooth sidebar-scroll">
+            <div class="fixed w-[240px] mt-3 overflow-y-auto scroll-smooth sidebar-scroll">
                 <!-- first section -->
                 <ul>
                     <li title="Home"
@@ -307,88 +307,90 @@
                 </div>
             </div>
         </aside>
-        <section>
+        <section class="pl-[240px]">
             <!-- main content area -->
-            <div class="h-[2.8rem] mt-3 flex flex-rows mx-4">
-                <div
-                    class="h-7 w-9 text-sm bg-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
-                    All</div>
-                <div
-                    class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
-                    Gaming</div>
-                <div
-                    class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
-                    Music</div>
-                <div
-                    class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
-                    Podcasts</div>
-                <div
-                    class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
-                    Flutters</div>
-                <div
-                    class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
-                    Comedy</div>
-                <div
-                    class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
-                    Dramedy</div>
-                <div
-                    class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
-                    TED</div>
-                <div
-                    class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
-                    Dramedy</div>
-                <div
-                    class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
-                    Thrillers</div>
-                <div
-                    class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
-                    AI</div>
-                <div
-                    class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
-                    Lives</div>
-                <div
-                    class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
-                    Programming </div>
-                <div
-                    class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium relative cursor-pointer">
-                    Recently
+            <div class="fixed top-14 z-40 w-full bg-black">
+                <div class="h-[3.7rem] mt-3 flex flex-rows mx-4">
                     <div
-                        class="w-8 h-8 rounded-full bg-neutral-900 flex justify-center items-center hover:bg-neutral-700 transition absolute right-[-11px] cursor-pointer">
-                        <img src="./media/keyboard_arrow_right.svg" alt="" class="w-6 h-6">
+                        class="h-7 w-9 text-sm bg-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
+                        All</div>
+                    <div
+                        class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
+                        Gaming</div>
+                    <div
+                        class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
+                        Music</div>
+                    <div
+                        class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
+                        Podcasts</div>
+                    <div
+                        class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
+                        Flutters</div>
+                    <div
+                        class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
+                        Comedy</div>
+                    <div
+                        class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
+                        Dramedy</div>
+                    <div
+                        class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
+                        TED</div>
+                    <div
+                        class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
+                        Dramedy</div>
+                    <div
+                        class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
+                        Thrillers</div>
+                    <div
+                        class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
+                        AI</div>
+                    <div
+                        class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
+                        Lives</div>
+                    <div
+                        class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
+                        Programming </div>
+                    <div
+                        class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium relative cursor-pointer">
+                        Recently
+                        <div
+                            class="w-8 h-8 rounded-full bg-neutral-900 flex justify-center items-center hover:bg-neutral-700 transition absolute right-[-11px] cursor-pointer">
+                            <img src="./media/keyboard_arrow_right.svg" alt="" class="w-6 h-6">
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- video section -->
-            <div class="grid grid-cols-3 gap-3 p-4">
+            <!-- first video section -->
+            <div class="grid grid-cols-3 gap-x-4 gap-y-9 p-4 mt-10">
                 <!-- hope -->
                 <div class="w-full cursor-pointer">
                     <div class="aspect-video w-full relative">
                         <img src="https://i.ytimg.com/vi/a0goLSCAcBw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBVDDHPOJ0c2l9pakvouuuw_3dROg"
-                            alt="Video Thumbnail" class="w-full h-full object-fit rounded-xl">
+                            alt="Video Thumbnail" class="w-full h-full object-cover rounded-xl" />
                         <div
-                            class="absolute right-1 bottom-1 w-12 h-auto rounded-md px-2 py-1 bg-zinc-800 text-neutral-200 text-sm font-medium bg-opacity-[85%]">
+                            class="absolute right-1 bottom-1 w-auto rounded-md px-2 py-1 bg-zinc-800 bg-opacity-[85%] text-neutral-200 text-sm font-medium">
                             3:03
                         </div>
                     </div>
-                    <div class="mt-3 text-neutral-200 flex ">
-                        <div>
-                            <img src="media/thinkmusic.png" alt="Subscriptions Icon" class="w-12 h-8" />
-                        </div>
+                    <div class="mt-3 text-neutral-200 flex items-start gap-2">
 
-                        <div class="ms-2">
-                            <h3 class="text-[15px] font-semibold leading-snug">Hope Song - Video | Sarkeet | Asif Ali |
-                                Thamar | Govid Vasantha | Kapil Kapilan | Anwar Ali </h3>
-                            <p class="text-xs
-                            text-gray-400 mt-1 hover:text-gray-300">Think Music India</p>
+                        <div>
+                            <img src="media/thinkmusic.png" alt="Channel Icon"
+                                class="w-7 h-7 rounded-full object-cover" />
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start w-full">
+                                <h3 class="text-[15px] font-semibold leading-snug">
+                                    Hope Song - Video | Sarkeet | Asif Ali | Thamar <br />
+                                    Govid Vasantha | Kapil Kapilan | Anwar Ali
+                                </h3>
+                                <i class="fa-solid fa-ellipsis-vertical text-gray-400"></i>
+                            </div>
+                            <p class="text-xs text-gray-400 mt-1 hover:text-gray-300">Think Music India</p>
                             <p class="text-xs text-gray-400">4.8M views • 2 months ago</p>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-ellipsis-vertical" style="color: #d3cece;"></i>
-
                         </div>
                     </div>
                 </div>
-
                 <!--TDX -->
                 <div class="w-full cursor-pointer">
                     <div class="aspect-video w-full relative">
@@ -402,7 +404,7 @@
                     <div class="mt-3 text-neutral-200 flex ">
                         <div>
                             <img src="https://yt3.googleusercontent.com/1gDPO-4YPWFErfn3yQBnv0yxpkmiud1m5CrorApkOqUYdNd9FrZQ9xB9C9VmDt4EsgArnlwqAQc=s160-c-k-c0x00ffffff-no-rj"
-                                alt="Channel Icon" class="w-9 h-8 rounded-full object-cover" />
+                                alt="Channel Icon" class="w-8 h-7 rounded-full object-cover" />
                         </div>
 
                         <div class="ms-2">
@@ -413,7 +415,7 @@
                             <p class="text-xs text-gray-400">29K views • 7 days ago</p>
                         </div>
                         <div>
-                            <i class="fa-solid fa-ellipsis-vertical" style="color: #d3cece;"></i>
+                            <i class="fa-solid fa-ellipsis-vertical text-gray-400"></i>
 
                         </div>
                     </div>
@@ -430,7 +432,7 @@
                     </div>
                     <div class="mt-3 text-neutral-200 flex items-start justify-between">
                         <div>
-                            <img src="media/netflix.png" alt="Subscriptions Icon" class="w-12 h-8" />
+                            <img src="media/netflix.png" alt="Subscriptions Icon" class="w-7 h-7" />
                         </div>
                         <div class="flex-1">
                             <h3 class="text-[15px] font-semibold ">Goodbye | Squid Game | Netflix</h3>
@@ -443,10 +445,202 @@
                     </div>
                 </div>
 
+                <!--talk-->
+                <div class="w-full cursor-pointer">
+                    <div class="aspect-video w-full relative">
+                        <img src="https://i.ytimg.com/vi/13lvgH2-2A4/maxresdefault.jpg" alt="Video Thumbnail"
+                            class="w-full h-full object-cover rounded-xl" />
+                        <div
+                            class="absolute right-1 bottom-1 w-auto rounded-md px-2 py-1 bg-zinc-800 bg-opacity-[85%] text-neutral-200 text-sm font-medium">
+                            1:44
+                        </div>
+                    </div>
+                    <div class="mt-3 text-neutral-200 flex items-start gap-2">
+                        <div>
+                            <img src="https://yt3.ggpht.com/_rkdeTYsLK-7RKI9XVKEsyNDTPHkhlHYvbR30-iDSVKLDdH1RWxI375_okaG5yV8DDWdjkFjUR0=s48-c-k-c0x00ffffff-no-rj"
+                                alt="Channel Icon" class="w-7 h-7 rounded-full object-cover" />
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start w-full">
+                                <h3 class="text-[15px] font-semibold leading-snug">
 
+                                    If you're ambitious but lazy in your 20s, please watch this...
+                                </h3>
+                                <i class="fa-solid fa-ellipsis-vertical text-gray-400"></i>
+                            </div>
+                            <p class="text-xs text-gray-400 mt-1 hover:text-gray-300">Somrat Dutta</p>
+                            <p class="text-xs text-gray-400">438K views • 8 months ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--bbc-->
+                <div class="w-full cursor-pointer">
+                    <div class="aspect-video w-full relative">
+                        <img src="https://i.ytimg.com/vi/LXrh2AJa8nU/maxresdefault.jpg" alt="Video Thumbnail"
+                            class="w-full h-full object-cover rounded-xl" />
+                        <div
+                            class="absolute right-1 bottom-1 w-auto rounded-md px-2 py-1 bg-zinc-800 bg-opacity-[85%] text-neutral-200 text-sm font-medium">
+                            7:02
+                        </div>
+                    </div>
+                    <div class="mt-3 text-neutral-200 flex items-start gap-2">
+                        <div>
+                            <img src="https://yt3.ggpht.com/ANAs2cAwxesjyoe3vsyhZGzlTafbicnuGMzPNSAuJdpTwg8CesHkViMTCrYqAJEGaKXG6_KEUg=s48-c-k-c0x00ffffff-no-rj"
+                                alt="Channel Icon" class="w-7 h-7 rounded-full object-cover" />
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start w-full">
+                                <h3 class="text-[15px] font-semibold leading-snug">
+
+                                    Late nights: Bad for health? BBC News Review
+                                </h3>
+                                <i class="fa-solid fa-ellipsis-vertical text-gray-400"></i>
+                            </div>
+                            <p class="text-xs text-gray-400 mt-1 hover:text-gray-300">BBC Learning English</p>
+                            <p class="text-xs text-gray-400">2.3M views • 2 years ago</p>
+                        </div>
+                    </div>
+                </div>
+                <!--CSS animation video-->
+                <div class="w-full cursor-pointer">
+                    <div class="aspect-video w-full relative">
+                        <img src="https://i.ytimg.com/vi/0rGwfESLNLg/maxresdefault.jpg" alt="Video Thumbnail"
+                            class="w-full h-full object-cover rounded-xl" />
+                        <div
+                            class="absolute right-1 bottom-1 w-auto rounded-md px-2 py-1 bg-zinc-800 bg-opacity-[85%] text-neutral-200 text-sm font-medium">
+                            6:10
+                        </div>
+                    </div>
+                    <div class="mt-3 text-neutral-200 flex items-start gap-2">
+
+                        <div>
+                            <img src="https://yt3.ggpht.com/4mKjeROH4uyWAj0gYTc1sBvrFBwDFmRFyxuqCsa-O3AMYyu4hW70IsAKF8c2l_6M3l1j2hmd0Q=s68-c-k-c0x00ffffff-no-rj"
+                                alt="Channel Icon" class="w-7 h-7 rounded-full object-fit" />
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start w-full">
+                                <h3 class="text-[15px] font-semibold leading-snug">
+
+                                    How to animate CSS MASKS for stunning HOVER EFFECTS
+                                </h3>
+                                <i class="fa-solid fa-ellipsis-vertical text-gray-400"></i>
+                            </div>
+                            <p class="text-xs text-gray-400 mt-1 hover:text-gray-300">Optimistic Web</p>
+                            <p class="text-xs text-gray-400">5.9K views • 5 months ago</p>
+                        </div>
+                    </div>
+                </div>
 
             </div>
+            <!-- shorts heading -->
+            <div class="flex justify-between p-4">
+                <div class="flex items-center gap-[10px] ms-4">
+                    <img src="./media/Youtube_shorts_icon.svg.png" alt="" class="w-4 h-4">
+                    <h4 class="text-white text-lg font-semibold">Shorts</h4>
+                </div>
+                <div>
+                    <i class="fa-solid fa-ellipsis-vertical  text-white "></i>
+                </div>
+            </div>
+            <!-- shorts section -->
+            <div class="grid grid-cols-5 gap-3 mx-4 mb-12">
+                <!-- first shorts -->
+                <div class="w-full cursor-pointer">
+                    <div class="aspect-[9/13] w-full relative">
+                        <img src="https://i.ytimg.com/vi/5MJwieoYbzg/oardefault.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLBCxQEaQ063ye7mnMEyEGwmEeE09A"
+                            alt="Video Thumbnail" class="w-full h-full object-cover rounded-xl" />
+                    </div>
+                    <div class="mt-3 text-neutral-200 flex items-start gap-2">
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start w-full">
+                                <h3 class="text-[14px] font-semibold leading-snug">
+                                    Learn English Idioms (With <br> Meaning) | #Shorts ...
+                                </h3>
+                                <i class="fa-solid fa-ellipsis-vertical text-white"></i>
+                            </div>
+                            <p class="text-xs text-gray-400 pt-1">78K views</p>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- second shorts -->
+                <div class="w-full cursor-pointer">
+                    <div class="aspect-[9/13] w-full relative">
+                        <img src="https://i.ytimg.com/vi/VjkC1MgM5Cg/oar2.jpg?sqp=-oaymwEYCJgDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLC1mwlh011JIaXzlouk4GwAUZkOeQ"
+                            alt="Video Thumbnail" class="w-full h-full object-cover rounded-xl" />
+                    </div>
+                    <div class="mt-3 text-neutral-200 flex items-start gap-2">
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start w-full">
+                                <h3 class="text-[14px] font-semibold leading-snug">
+                                    They Raised her so well ♥️🙌🏻 | Prajakta Koli | MostlySane FC
+                                </h3>
+                                <i class="fa-solid fa-ellipsis-vertical text-white"></i>
+                            </div>
+                            <p class="text-xs text-gray-400 pt-1">1.1M views</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- third shorts -->
+                 <div class="w-full cursor-pointer">
+                    <div class="aspect-[9/13] w-full relative">
+                        <img src="https://i.ytimg.com/vi/kqL-R21Hjtg/maxresdefault.jpg"
+                            alt="Video Thumbnail" class="w-full h-full object-cover rounded-xl" />
+                    </div>
+                    <div class="mt-3 text-neutral-200 flex items-start gap-2">
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start w-full">
+                                <h3 class="text-[14px] font-semibold leading-snug">
+                                   Squid Game Loading Animation <br> in Websites. #squidgame 
+                                </h3>
+                                <i class="fa-solid fa-ellipsis-vertical text-white"></i>
+                            </div>
+                            <p class="text-xs text-gray-400 pt-1">1K views</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- fourth shorts -->
+                <div class="w-full cursor-pointer">
+                    <div class="aspect-[9/13] w-full relative">
+                        <img src="https://i.ytimg.com/vi/5J0x2a32I9c/oardefault.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLAvBnN8wmfp7pzOaFXRKFlODBCUQA"
+                            alt="Video Thumbnail" class="w-full h-full object-cover rounded-xl" />
+                    </div>
+                    <div class="mt-3 text-neutral-200 flex items-start gap-2">
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start w-full">
+                                <h3 class="text-[14px] font-semibold leading-snug">
+                                    Stop Python,Java🔴Master this to get Job easily🤯
+                                </h3>
+                                <i class="fa-solid fa-ellipsis-vertical text-white"></i>
+                            </div>
+                            <p class="text-xs text-gray-400 pt-1">225K views</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- fifth shorts -->
+                <div class="w-full cursor-pointer">
+                    <div class="aspect-[9/13] w-full relative">
+                        <img src="https://i.ytimg.com/vi/0ZLOoGTgwLI/oardefault.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLAfWA_JCompzTFAHJwHQoaXz-moJw"
+                            alt="Video Thumbnail" class="w-full h-full object-cover rounded-xl" />
+                    </div>
+                    <div class="mt-3 text-neutral-200 flex items-start gap-2">
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start w-full">
+                                <h3 class="text-[14px] font-semibold leading-snug">
+
+                                    ✨Rounded Navigation Bar <br> Design | HTML CSS...
+                                </h3>
+                                <i class="fa-solid fa-ellipsis-vertical text-white"></i>
+                            </div>
+                            <p class="text-xs text-gray-400 pt-1">14K views</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
 
         </section>

@@ -3,36 +3,14 @@
     padding: 0%;
     font-family: "Roboto", sans-serif;
 }
-:root{
-    --white:#FFFFFF;
-    --vedio-meta:#e5e7eb;
-    --video-title-font:15px;
-    --channel-name-font:13px;
-    --view-time-font:12px;
-}
+
 body{
     background-color: rgba(0, 0, 0, 0.955);
 }
 
-.video-title {
-  font-size: var(--video-title-font);
-  font-weight: 500;
-  color: var(--white);
-}
-
-.channel-name {
-  font-size: var(--channel-name-font);
-  font-weight: 400;
-  color: var(--vedio-meta);
-}
-
-.views-upload-time {
-  font-size: var(--view-time-font);
-  color:var(--vedio-meta);
-}
 
 .sidebar-scroll {
-  height: calc(100vh - 0.75rem);
+  height: calc(100vh - 56px);
   overflow-y: auto;
 }
 

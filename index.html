@@ -33,12 +33,12 @@
     <!-- navbar -->
     <nav class="sticky top-0 z-50 bg-black h-14 flex items-center px-4">
         <!-- logo section -->
-        <div class="w-full h-[56px] ps-[11px] pe-4 py-2 flex justify-between items-center">
+        <div class="w-full h-[56px] md:ps-[11px] md:pe-4 py-2 flex justify-between items-center">
             <div class="flex items-center space-x-6">
                 <div><i class="fa-solid fa-bars fa-lg cursor-pointer" style="color: #d3cece;"></i></div>
                 <div class="flex items-center justify-center space-x-1 cursor-pointer">
                     <img src="./media/youtube.png" alt="youtube icon" width="25" class="block">
-                    <h4 class="text-white tracking-tighter text-xl">
+                    <h4 class="text-white tracking-tighter md:text-xl">
                         YouTube <sup class="text-xs text-neutral-200 font-light">AE</sup>
                     </h4>
                 </div>
@@ -47,17 +47,17 @@
             <div class="flex">
                 <div class="flex justify-center items-center group">
                     <div
-                        class="w-[500px] border px-3 py-[7px] rounded-l-3xl !border-neutral-700 group-focus-within:border-blue-500 transition">
+                        class="hidden md:block w-[500px] border px-3 py-[7px] rounded-l-3xl !border-neutral-700 group-focus-within:border-blue-500 transition">
                         <input type="text" placeholder="Search" class="w-full bg-transparent text-white outline-none ">
                     </div>
                     <div
-                        class="w-[60px] border px-3 py-[11px] rounded-r-3xl bg-zinc-800 !border-neutral-700 flex items-center justify-center ">
+                        class="md:w-[60px] md:border px-3 py-[11px] rounded-r-3xl md:bg-zinc-800 !border-neutral-700 flex items-center justify-center">
                         <i class="fa-solid fa-magnifying-glass bg-transparent" style="color: #ffffff;"></i>
                     </div>
                 </div>
                 <div class="relative group inline-block">
                     <div
-                        class="bg-zinc-800 rounded-full w-[40px] h-[40px] flex justify-center items-center ms-3 hover:bg-neutral-700 transition cursor-pointer">
+                        class="hidden md:flex bg-zinc-800 rounded-full w-[40px] h-[40px] justify-center items-center md:ms-3 hover:bg-neutral-700 transition cursor-pointer">
                         <i class="fa-solid fa-microphone bg-transparent" style="color:  #ffffff;"></i>
                         <div class="w-[140px] text-center absolute top-full left-1/2 -translate-x-1/2 mt-3 
                       hidden group-hover:block 
@@ -69,17 +69,20 @@
             <!-- profile section -->
             <div class="flex justify-center items-center bg-transparent">
                 <div
-                    class="w-[100px] bg-zinc-800 flex justify-center items-center py-2 rounded-3xl me-3 hover:bg-neutral-700 cursor-pointer transition">
+                    class="w-[100px] bg-zinc-800 flex justify-center items-center py-2 rounded-3xl md:me-3 hover:bg-neutral-700 cursor-pointer transition">
                     <i class="fa-solid fa-plus fa-lg" style="color: #dcdada;"></i>
                     <h4 class="text-white text-sm ms-2 font-semibold bg-transparent">Create</h4>
                 </div>
-                <div class="flex justify-center items-center ">
+                <div class="hidden md:flex justify-center items-center m-2">
                     <div class="relative group inline-block ">
                         <i class="fa-regular fa-bell fa-lg cursor-pointer " style="color: #ffffff;"></i>
                         <div class="absolute top-full left-1/2 -translate-x-1/2 mt-4 
                   hidden group-hover:block 
                   bg-neutral-700 text-white text-xs px-2 py-2 
                   rounded z-10">Notifications
+                        </div>
+                        <div class="absolute bottom-full left-1/2 translate-y-[13px] text-white bg-red-600 h-4 w-5 rounded-md text-[11px] text-center">
+                            9+
                         </div>
                     </div>
                 </div>
@@ -93,7 +96,7 @@
     <!-- side bar -->
     <div class="flex ">
         <aside>
-            <div class="fixed w-[240px] mt-3 overflow-y-auto scroll-smooth sidebar-scroll">
+            <div class="hidden md:block fixed w-[240px] mt-3 overflow-y-auto scroll-smooth sidebar-scroll">
                 <!-- first section -->
                 <ul>
                     <li title="Home"
@@ -307,12 +310,12 @@
                 </div>
             </div>
         </aside>
-        <section class="pl-[240px]">
+        <section class="md:pl-[240px]">
             <!-- main content area -->
             <div class="fixed top-14 z-40 w-full bg-black">
                 <div class="h-[3.7rem] mt-3 flex flex-rows mx-4">
                     <div
-                        class="h-7 w-9 text-sm bg-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
+                        class="h-7 w-auto p-2 md:p-0 text-sm bg-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
                         All</div>
                     <div
                         class="h-7 w-auto px-3 text-sm bg-neutral-800 text-neutral-200 rounded-md flex items-center justify-center font-medium me-[0.7rem] cursor-pointer">
@@ -361,7 +364,7 @@
                 </div>
             </div>
             <!-- first video section -->
-            <div class="grid grid-cols-3 gap-x-4 gap-y-9 p-4 mt-[55px]">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-9 p-4 mt-[55px]">
                    <!--zootopia-->
                 <div class="w-full cursor-pointer ">
                     <div class="aspect-video w-full relative ">
@@ -533,7 +536,7 @@
             </div>
             <!-- shorts heading -->
             <div class="flex justify-between p-4">
-                <div class="flex items-center gap-[10px] ms-4">
+                <div class="flex items-center gap-[10px] md:ms-4 ms-1">
                     <img src="./media/Youtube_shorts_icon.svg.png" alt="" class="w-4 h-4">
                     <h4 class="text-white text-lg font-semibold">Shorts</h4>
                 </div>
@@ -542,7 +545,7 @@
                 </div>
             </div>
             <!-- shorts section -->
-            <div class="grid grid-cols-5 gap-3 mx-4 mb-12">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-3 mx-4 mb-12">
                 <!-- first shorts -->
                 <div class="w-full cursor-pointer">
                     <div class="aspect-[9/13] w-full relative">
@@ -616,7 +619,7 @@
                     </div>
                 </div>
                 <!-- fifth shorts -->
-                <div class="w-full cursor-pointer">
+                <div class="hidden md:inline-block w-full cursor-pointer">
                     <div class="aspect-[9/13] w-full relative">
                         <img src="https://i.ytimg.com/vi/0ZLOoGTgwLI/oardefault.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLAfWA_JCompzTFAHJwHQoaXz-moJw"
                             alt="Video Thumbnail" class="w-full h-full object-cover rounded-xl" />
@@ -636,7 +639,7 @@
                 </div>
             </div>
             <!-- next video section  -->
-            <div class="grid grid-cols-3 gap-x-4 gap-y-9 p-4 mt-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-9 p-4 mt-10">
                 <!-- dragon -->
                 <div class="w-full cursor-pointer">
                     <div class="aspect-video w-full relative">
